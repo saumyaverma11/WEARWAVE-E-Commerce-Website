@@ -204,6 +204,7 @@ h1 mark{
     width :100vw;
     background-color: rgb(240, 235, 235);
     padding:2rem;
+    overflow-x: auto;
     
 }
 
