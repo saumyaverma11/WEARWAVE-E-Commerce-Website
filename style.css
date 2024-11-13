@@ -53,9 +53,6 @@ p{
 .section-m1{
     margin:40px 0;
 }
-body{
-    width: 100%;
-}
 
 #header{
     height:70px;
@@ -151,7 +148,6 @@ body{
 
 .left-content{
     width:45%;
-    margin:40px 30px 40px 70px ;
     padding:40px 30px;
     display: flex;
     flex-direction: column;
@@ -201,19 +197,22 @@ h1 mark{
 
 
 .features{
-    width :100vw;
+    width :100%;
     background-color: rgb(240, 235, 235);
     padding:2rem;
     overflow-x: auto;
-    
+
 }
 
 .feature-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* gap:5px; */
+    gap:5px;
     align-items: center;
+}
+.feature-container::-webkit-scrollbar{
+    display: none;
 }
 .fe-pic{
     display: flex;
@@ -222,7 +221,7 @@ h1 mark{
     gap:5px;
     padding:10px;
     background-color: white;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .fe-pic img{
     width:140px;
@@ -714,7 +713,6 @@ button.white{
     .hero{
         display: flex;
         flex-direction: column;
-        gap:0px;
     }
     .left-content{
         margin-bottom:2px;
@@ -729,8 +727,8 @@ button.white{
     }
     .left-content{
         width:100%;
-        margin:1rem;
-        padding:2rem 2rem 1rem 2rem;
+        margin:1rem 0 1rem 0rem;
+        padding:2rem 0rem 1rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -829,22 +827,18 @@ button.white{
     }
 
 }
-@media screen and (max-width:1255px){
+@media screen and (max-width:1000px){
     .feature-container{
-        /* overflow-x:scroll; */
         animation: scrollImages 10s linear infinite;
-
-
     }
     .feature-container::-webkit-scrollbar{
         display: none;
     }
 
 }
-
 @keyframes scrollImages{
     0%{
-        transform: translateX(100%);
+        transform: translateX(0%);
 
     }
     100%{
@@ -966,7 +960,7 @@ button.white{
     }
     .cloth-bg, .orange-bg{
         width:30%;
-        height:30%;
+        height:250px;
     }
     .banner-box h4{
         font-size: 10px;
